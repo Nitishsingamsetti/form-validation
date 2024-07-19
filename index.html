@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            width: 60%;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <form onsubmit="return formValidation()" name="myForm">
+        <label>Username</label>
+        <input type="text" name="username" placeholder="name">
+
+        <label>EMAIL</label>
+        <input type="email" placeholder="email" name="email">
+
+        <label >PASSWORD</label>
+        <input type="password" placeholder="user password" name="password">
+
+        <label >CONFIRM PASSWORD</label>
+        <input type="password" placeholder="re-enter password" name="confirmPassword">
+
+        <button type="submit">Submit</button>
+    </form>
+
+
+
+    <script src="./formvalidation.js"></script>
+</body>
+
+</html>
